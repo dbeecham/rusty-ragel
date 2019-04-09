@@ -24,13 +24,9 @@ struct natsparser_s {
 
 
 int natsparser_init (
-    struct natsparser_s * parser,
-    int (*cb)(void * user_data),
-    void * user_data
+    struct natsparser_s * parser
 )
 {
-    parser->user_data = user_data;
-    parser->cb = cb;
     %% write init;
 
     return 0;
